@@ -21,7 +21,7 @@ fi
 
 if [ "${cores:-0}" -lt 1 ] || [ "${cores:-0}" -gt 16 ] ; then
   echo "CPUs must be >= 1 and <= 16"
-  exit 1;
+  exit 2;
 fi
 
 if [ "${ram:-0}" -lt 1 ] || [ "${ram:-0}" -gt 64 ] ; then
